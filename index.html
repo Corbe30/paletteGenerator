@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+        <title>Palette Generator</title>
+        
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
+            <a></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto nav-text">
+                <a class="nav-item nav-link active" href="#">&nbsp;HOME&nbsp;<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">&nbsp;PORTFOLIO&nbsp;</a>
+                <a class="nav-item nav-link" href="#">&nbsp;CONTACT ME&nbsp;</a>
+              </div>
+            </div>
+        </nav>
+        <header height="1000px">
+          <h1 class="text-center heading"><label>Palette Generator</label></h1>
+          <p class="header-txt">Create randomized analogous color scheme for your project. <br>
+            Awesome palletes at you fingertips!<br><br>
+            Just click to copy on clipboard ^_^</p>
+        </header>
+
+        <main>
+          <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+          </script>
+          
+          <div class="animation-target a1" id="a1" data-toggle="tooltip" data-placement="top" title="#7FF5E2"></div>
+          <div class="animation-target a2" id="a2" data-toggle="tooltip" data-placement="top" title="#61D497"></div>
+          <div class="animation-target a3" id="a3" data-toggle="tooltip" data-placement="top" title="#78EB83"></div>
+          <div class="animation-target a4" id="a4" data-toggle="tooltip" data-placement="top" title="#87D461"></div>
+          <div class="animation-target a5" id="a5" data-toggle="tooltip" data-placement="top" title="#DBF772"></div>
+
+          <center><button type="button" class="btn btn-info" id="btn">Generate!</button></center>
+        </main> 
+
+        
+        
+    </body>
+    <script src="app.js" type="text/javascript"></script>
+</html>
