@@ -1,20 +1,27 @@
 #btn{}
 
+html{
+  scroll-behavior: smooth;
+}
 .heading{
     font-family: 'Roboto', sans-serif;
     font-weight:900;
     color: #515070;
     flex-basis:100%;
 }
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  padding-bottom:15px;
+}
 .nav-text{
     font-size: small;
     font-weight: 600;
 }
-.active{
-    font-weight: 700;
-    padding-bottom: 12px;
-    border-bottom: 3px solid black;
-}
+
 .nav-item{
     margin-right:3vw;
     margin-bottom:-8px;
@@ -22,7 +29,7 @@
 header{
     margin: 0;
     padding: 0;
-    height:40vh;
+    height:50vh;
     background: linear-gradient(90deg, #7FF5E2 0%, #DBF772 101.53%);
 
     display:flex;
@@ -31,6 +38,7 @@ header{
     flex-wrap: wrap;
 
     padding:70px;
+    padding-top:100px;
 }
 .header-txt{
     font-weight: 500;
@@ -54,7 +62,7 @@ main{
     width:70px;
     height:70px;
     background:blue;
-    flex-basis: 20%;
+    flex-basis: 19%;
   }
 
 .animation-target:hover{
@@ -103,11 +111,40 @@ main{
     margin-top:70px;
 }
 
+.about{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+.img-card{
+  
+  width:300px;
+  margin:2%;
+  border-radius:50px;
+  transition: all .2s ease-in-out;
+}
+
+.img-card:hover{
+  transform: scale(1.05);
+  filter: contrast(150%);
+}
+
+.fab:hover{
+  opacity:0.7;
+}
+.fas:hover{
+  opacity:0.7;
+}
 
 
 @media screen and (max-width: 500px) {
     .header-txt{
         font-size:2.55vw;
+        margin-top:50px;
     }
     .heading{
         font-size:10vw;
@@ -115,7 +152,8 @@ main{
         margin-bottom:-5vh;
     }
     header{
-        height: 60vh;
+        height: 70vh;
+        padding-top:70;
     }
     .animation-target{
         width:50px;
